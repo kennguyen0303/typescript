@@ -13,6 +13,8 @@ let booArr: Array<boolean>;
 //tuple
 let strNumTuple: [string, number];
 strNumTuple=["Kes",2];
+
+//an interface
 interface Person{ //defining an interface
     firstName: string; 
     lastName: string;
@@ -20,7 +22,7 @@ interface Person{ //defining an interface
 
 
 //creating a class now
-class Student {
+class Student implements Person{
     fullName: string;//by default what type is it ?
     //public on argument as the shorthand to automatically create properties of that name
     //are properties here mean the attributes ? 
@@ -56,6 +58,8 @@ function greeter(person: Person){//implementing an interface
 let user = new Student("Ken","T.","Nguyen");
 let user2 = new GraduateStudent("Concordia University", "Kien ","T.","nguyen ");
 let result=greeter(user);
+
+console.log(result);
 console.log(user.register());
 user2.toString();
 //note: user.register = return the type is function; user.register() will call the method.

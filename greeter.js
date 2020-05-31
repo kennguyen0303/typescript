@@ -64,6 +64,7 @@ function greeter(person) {
 var user = new Student("Ken", "T.", "Nguyen");
 var user2 = new GraduateStudent("Concordia University", "Kien ", "T.", "nguyen ");
 var result = greeter(user);
+console.log(result);
 console.log(user.register());
 user2.toString();
 //note: user.register = return the type is function; user.register() will call the method.
