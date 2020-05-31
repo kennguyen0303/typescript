@@ -34,13 +34,29 @@ class Student {
     }
 
 }
+//inheritance
+class GraduateStudent extends Student{
+    private university: string;
+    constructor(university:string, public firstName: string, public middleInitial: string,
+        public lastName:string){
+            super(firstName, middleInitial,lastName);
+            this.university=university;
+        }
+        public toString(){
+            console.log(this.fullName+" is graduated from "+ this.university);
+        }
+}
+
+
 function greeter(person: Person){//implementing an interface
     return "Hello, "+person.firstName+" "+person.lastName;
 }
 
 //let user = {firstName:"ken", lastName:"nguyen"}//like an object
 let user = new Student("Ken","T.","Nguyen");
+let user2 = new GraduateStudent("Concordia University", "Kien ","T.","nguyen ");
 let result=greeter(user);
 console.log(user.register());
+user2.toString();
 //note: user.register = return the type is function; user.register() will call the method.
 //this is a javascript code oh no ! Nothing new here, why it is so new to me
