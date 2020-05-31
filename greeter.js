@@ -1,3 +1,17 @@
+/*
+let strArr: string[]; //an array of string
+strArr=["ken", "Kennny"];
+
+//number arrya
+let numbArr: number[];
+let booArr: boolean[];
+*/
+var strArr;
+var numArr;
+var booArr;
+//tuple
+var strNumTuple;
+strNumTuple = ["Kes", 2];
 ;
 //creating a class now
 var Student = /** @class */ (function () {
@@ -17,5 +31,5 @@ function greeter(person) {
 //let user = {firstName:"ken", lastName:"nguyen"}//like an object
 var user = new Student("Ken", "T.", "Nguyen");
 var result = greeter(user);
-console.log(result);
+console.log(strArr);
 //this is a javascript code oh no ! Nothing new here, why it is so new to me

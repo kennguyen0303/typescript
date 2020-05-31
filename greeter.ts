@@ -1,7 +1,23 @@
+/*
+let strArr: string[]; //an array of string 
+strArr=["ken", "Kennny"];
+
+//number arrya
+let numbArr: number[];
+let booArr: boolean[];
+*/
+let strArr: Array<string>;
+let numArr: Array<number>;
+let booArr: Array<boolean>;
+
+//tuple
+let strNumTuple: [string, number];
+strNumTuple=["Kes",2];
 interface Person{ //defining an interface
     firstName: string; 
     lastName: string;
 };
+
 
 //creating a class now
 class Student {
@@ -22,6 +38,6 @@ function greeter(person: Person){//implementing an interface
 //let user = {firstName:"ken", lastName:"nguyen"}//like an object
 let user = new Student("Ken","T.","Nguyen");
 let result=greeter(user);
-console.log(result)
+console.log(strArr)
 
 //this is a javascript code oh no ! Nothing new here, why it is so new to me
