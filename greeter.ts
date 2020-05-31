@@ -29,6 +29,9 @@ class Student {
             this.fullName=firstName + " "+middleInitial+" "+lastName;
         
         }
+    public register(): string{
+        return this.fullName+"is registered";
+    }
 
 }
 function greeter(person: Person){//implementing an interface
@@ -38,6 +41,6 @@ function greeter(person: Person){//implementing an interface
 //let user = {firstName:"ken", lastName:"nguyen"}//like an object
 let user = new Student("Ken","T.","Nguyen");
 let result=greeter(user);
-console.log(strArr)
-
+console.log(user.register());
+//note: user.register = return the type is function; user.register() will call the method.
 //this is a javascript code oh no ! Nothing new here, why it is so new to me

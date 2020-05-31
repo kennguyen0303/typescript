@@ -23,6 +23,9 @@ var Student = /** @class */ (function () {
         this.lastName = lastName;
         this.fullName = firstName + " " + middleInitial + " " + lastName;
     }
+    Student.prototype.register = function () {
+        return this.fullName + "is registered";
+    };
     return Student;
 }());
 function greeter(person) {
@@ -31,5 +34,6 @@ function greeter(person) {
 //let user = {firstName:"ken", lastName:"nguyen"}//like an object
 var user = new Student("Ken", "T.", "Nguyen");
 var result = greeter(user);
-console.log(strArr);
+console.log(user.register());
+//note: user.register = return the type is function; user.register() will call the method.
 //this is a javascript code oh no ! Nothing new here, why it is so new to me
